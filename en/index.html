@@ -6,7 +6,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Official API Document Of Coinstore</title>
-    <link href="../images/favicon-ab07c47e.ico" rel="icon" type="image/ico">
+    <link href="../images/gems-favicon-07dd534d.ico" rel="icon" type="image/ico">
     <style media="screen">
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
@@ -290,7 +290,7 @@
 
   <body class="en en_index" data-languages="[]">
     <div class="header">
-      <img src="../images/logo-b34a5437.png" class="logo" alt="" />
+      <img src="../images/gems-logo.png" class="logo" alt="" />
       <div class="tabs">
         <ul>
           <li class="active">
@@ -566,7 +566,7 @@
 <h2 id='access-urls'>Access URLs</h2>
 <p><strong>REST API</strong></p>
 
-<p><code>https://api.coinstore.com/api</code></p>
+<p><code>https://api.gems.vip/api</code></p>
 
 <p><strong>WebSocket</strong></p>
 
@@ -649,7 +649,7 @@ Note: The request parameters and request body are not sorted but directly splice
 - POST request: Parameters can be set in the path, and they can be sent in JSON format to the request body. If there are no parameters,{} needs to be sent</p>
 
 <p>A licit request consists of the following parts:
-- method request address: Access server address api.coinstore.com，e.g. https://api.coinstore.com/api/trade/order/place
+- method request address: Access server address api.gems.vip，e.g. https://api.gems.vip/api/trade/order/place
 - Required and optional parameters.
 - X-CS-APIKEY: API Key applied by the user.
 - X-CS-EXPIRES: Timestamp when you issued the request. For example:1629291143107.
@@ -860,7 +860,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/v2/public/config/spot/symbols"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/v2/public/config/spot/symbols"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -878,7 +878,7 @@ needs to be set.</strong></p>
  <span class="s">'exch-language'</span><span class="p">:</span> <span class="s">'en_US'</span><span class="p">,</span>
  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'*/*'</span><span class="p">,</span>
- <span class="c1"># 'Host': 'https://api.coinstore.com',
+ <span class="c1"># 'Host': 'https://api.gems.vip',
 </span> <span class="s">'Connection'</span><span class="p">:</span> <span class="s">'keep-alive'</span>
 <span class="p">}</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">request</span><span class="p">(</span><span class="s">"POST"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
@@ -1070,7 +1070,7 @@ needs to be set.</strong></p>
 
 <span class="c1"># api get currency information
 </span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/fi/v1/common/currency?currencyCode=ETH"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/fi/v1/common/currency?currencyCode=ETH"</span>
 <span class="n">api_key</span> <span class="o">=</span> <span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -1137,7 +1137,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/spot/accountList"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/spot/accountList"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -1155,7 +1155,7 @@ needs to be set.</strong></p>
  <span class="s">'exch-language'</span><span class="p">:</span> <span class="s">'en_US'</span><span class="p">,</span>
  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'*/*'</span><span class="p">,</span>
- <span class="c1"># 'Host': 'https://api.coinstore.com',
+ <span class="c1"># 'Host': 'https://api.gems.vip',
 </span> <span class="s">'Connection'</span><span class="p">:</span> <span class="s">'keep-alive'</span>
 <span class="p">}</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">request</span><span class="p">(</span><span class="s">"POST"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
@@ -1353,7 +1353,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/fi/v3/asset/deposit/do"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/fi/v3/asset/deposit/do"</span>
 <span class="n">api_key</span> <span class="o">=</span> <span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -1571,7 +1571,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/fi/v3/asset/deposit/record/list"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/fi/v3/asset/deposit/record/list"</span>
 <span class="n">api_key</span> <span class="o">=</span> <span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -1814,7 +1814,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/fi/v3/asset/withdraw/record/list"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/fi/v3/asset/withdraw/record/list"</span>
 <span class="n">api_key</span> <span class="o">=</span> <span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -1980,7 +1980,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/fi/v3/asset/doWithdraw"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/fi/v3/asset/doWithdraw"</span>
 <span class="n">api_key</span> <span class="o">=</span> <span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -2088,7 +2088,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/fi/v3/asset/cancelWithdraw"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/fi/v3/asset/cancelWithdraw"</span>
 <span class="n">api_key</span> <span class="o">=</span> <span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -2125,7 +2125,7 @@ needs to be set.</strong></p>
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div><h2 id='fund-transfer'><span id="2">Fund transfer</span></h2>
 <p>Fund transfer</p>
-<h4 id='currently-supporting-contract-lt-gt-spot-transfer-api-domain-name-address-https-futures-api-coinstore-com-api-call-support-for-apikey'>Currently supporting contract&lt;-&gt;spot transfer, API domain name address https://futures.api.coinstore.com/api Call support for ApiKey</h4><h3 id='http-request-8'>HTTP Request:</h3>
+<h4 id='currently-supporting-contract-lt-gt-spot-transfer-api-domain-name-address-https-futures-api-gems-vip-api-call-support-for-apikey'>Currently supporting contract&lt;-&gt;spot transfer, API domain name address https://futures.api.gems.vip/api Call support for ApiKey</h4><h3 id='http-request-8'>HTTP Request:</h3>
 <ul>
 <li>POST /v1/future/transfer</li>
 </ul>
@@ -2226,7 +2226,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/v1/future/transfer"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/v1/future/transfer"</span>
 <span class="n">api_key</span> <span class="o">=</span> <span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -2316,7 +2316,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span> 
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/trade/order/active"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/trade/order/active"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span> 
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -2500,7 +2500,7 @@ needs to be set.</strong></p>
 </tbody></table>
 <h2 id='get-current-orders-v2'><span id="2"> Get current orders V2 </span></h2>
 <p>Get current order v2 version</p>
-<h4 id='the-new-interface-api-domain-name-address-https-api-coinstore-com-call-support-for-apikey'>The new interface API domain name address <code>https://api.coinstore.com</code>  Call support for ApiKey</h4><h3 id='http-request-10'>HTTP Request:</h3>
+<h4 id='the-new-interface-api-domain-name-address-https-api-gems-vip-call-support-for-apikey'>The new interface API domain name address <code>https://api.gems.vip</code>  Call support for ApiKey</h4><h3 id='http-request-10'>HTTP Request:</h3>
 <ul>
 <li>GET /api/v2/trade/order/active</li>
 </ul>
@@ -2513,7 +2513,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/v2/trade/order/active"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/v2/trade/order/active"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span> 
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -2722,7 +2722,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/trade/match/accountMatches?symbol=tipusdt"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/trade/match/accountMatches?symbol=tipusdt"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span><span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -2973,7 +2973,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">json</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/trade/order/cancel"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/trade/order/cancel"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -3087,7 +3087,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">json</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/trade/order/cancel"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/trade/order/cancel"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -3175,7 +3175,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/trade/order/place"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/trade/order/place"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -3200,7 +3200,7 @@ needs to be set.</strong></p>
  <span class="s">'exch-language'</span><span class="p">:</span> <span class="s">'en_US'</span><span class="p">,</span>
  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'*/*'</span><span class="p">,</span>
- <span class="c1"># 'Host': 'https://api.coinstore.com',
+ <span class="c1"># 'Host': 'https://api.gems.vip',
 </span> <span class="s">'Connection'</span><span class="p">:</span> <span class="s">'keep-alive'</span>
 <span class="p">}</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">request</span><span class="p">(</span><span class="s">"POST"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
@@ -3351,7 +3351,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/trade/order/placeBatch"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/trade/order/placeBatch"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -3374,7 +3374,7 @@ needs to be set.</strong></p>
  <span class="s">'exch-language'</span><span class="p">:</span> <span class="s">'en_US'</span><span class="p">,</span>
  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'*/*'</span><span class="p">,</span>
- <span class="c1"># 'Host': 'https://api.coinstore.com',
+ <span class="c1"># 'Host': 'https://api.gems.vip',
 </span> <span class="s">'Connection'</span><span class="p">:</span> <span class="s">'keep-alive'</span>
 <span class="p">}</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">request</span><span class="p">(</span><span class="s">"POST"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
@@ -3546,7 +3546,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">json</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/trade/order/cancelBatch"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/trade/order/cancelBatch"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -3647,7 +3647,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/trade/order/orderInfo?ordId=1780715084580128"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/trade/order/orderInfo?ordId=1780715084580128"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b'your api_key'</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b'your secret_key'</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span><span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
@@ -3852,7 +3852,7 @@ needs to be set.</strong></p>
 </tbody></table>
 <h2 id='get-order-information-v2'><span id="14">Get order information V2 </span></h2>
 <p>Get order information v2</p>
-<h4 id='the-new-interface-api-domain-name-address-https-api-coinstore-com-call-support-for-apikey-2'>The new interface API domain name address <code>https://api.coinstore.com</code>  Call support for ApiKey</h4><h3 id='http-request-18'>HTTP Request:</h3>
+<h4 id='the-new-interface-api-domain-name-address-https-api-gems-vip-call-support-for-apikey-2'>The new interface API domain name address <code>https://api.gems.vip</code>  Call support for ApiKey</h4><h3 id='http-request-18'>HTTP Request:</h3>
 <ul>
 <li>GET /api/v2/trade/order/orderInfo</li>
 </ul>
@@ -3865,7 +3865,7 @@ needs to be set.</strong></p>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.coinstore.com/api/v2/trade/order/orderInfo?ordId=1780715084580128"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">"https://api.gems.vip/api/v2/trade/order/orderInfo?ordId=1780715084580128"</span>
 <span class="n">api_key</span><span class="o">=</span><span class="s">b''</span>
 <span class="n">secret_key</span> <span class="o">=</span> <span class="s">b''</span>
 <span class="n">expires</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">time</span><span class="p">()</span><span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
